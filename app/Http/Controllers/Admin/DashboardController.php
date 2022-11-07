@@ -14,7 +14,21 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.dashboard.index', [
+            'title' => 'Dashboard'
+        ]);
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function konten()
+    {
+        return view('admin.konten.index', [
+            'title' => 'Konten'
+        ]);
     }
 
     /**

@@ -14,7 +14,33 @@ class PortfolioController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.konten.portfolio.index', [
+            'title' => 'Portfolio'
+        ]);
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function categories()
+    {
+        return view('admin.konten.portfolio.category', [
+            'title' => 'Portfolio Categories'
+        ]);
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function status()
+    {
+        return view('admin.konten.portfolio.status', [
+            'title' => 'Portfolio Statuses'
+        ]);
     }
 
     /**

@@ -14,8 +14,47 @@ class BlogController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.blog.index', [
+            'title' => 'Blogs'
+        ]);
     }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function category()
+    {
+        return view('admin.blog.categories.index', [
+            'title' => 'Blog Categories'
+        ]);
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function analytics()
+    {
+        return view('admin.blog.etc.analytics.index', [
+            'title' => 'Blog Analytics'
+        ]);
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function status()
+    {
+        return view('admin.blog.etc.status.index', [
+            'title' => 'Blog Statuses'
+        ]);
+    }
+
 
     /**
      * Show the form for creating a new resource.

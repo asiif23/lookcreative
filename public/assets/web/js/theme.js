@@ -37,6 +37,8 @@ License URI:
   if ($(".main-slider-one__carousel").length) {
     $(".main-slider-one__carousel").owlCarousel({
       items: 1,
+      mouseDrag: false,
+      touchDrag: false,
       animateOut: "fadeOut",
       animateIn: "fadeIn",
       nav: true,

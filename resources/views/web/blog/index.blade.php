@@ -1,4 +1,5 @@
 @extends('layouts.web.app')
+{{-- @seoForm($model) --}}
 @section('css')
     <!-- Include All CSS here-->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/web/css/bootstrap.css') }}" />

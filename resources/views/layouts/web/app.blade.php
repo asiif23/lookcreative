@@ -8,6 +8,9 @@
     @yield('css')
     {{-- AOS CSS --}}
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Scripts -->
+    @vite('resources/js/app.js')
 </head>
 
 <body>
